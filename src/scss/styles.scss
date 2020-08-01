@@ -1,8 +1,184 @@
-@import '_variables';
-@import '_share';
-@import '_media';
-*{
+@import "_variables";
+@import "_share";
+@import "_media";
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Roboto";
+    text-decoration: none;
+    
 }
+body{
+    background: #CFD8DD;
+}
+
+.container-main {
+    border-radius: 40px;
+    background: white;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    .header {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+
+        .title-and-link {
+            display: flex;
+            align-items: center;
+
+            .logo span {
+                font-size: 40px;
+                color: $primary-color;
+                font-weight: bold;
+            }
+            .links {
+                .active{
+                    border-bottom: 5px solid $primary-color;
+                    color:$primary-color;
+                    
+                }
+                display: flex;
+                a {
+                    color: $link-color;
+                    margin: 0 30px;
+                    font-size: 16px;
+                }
+            }
+        }
+        .log-in-up {
+            padding: 15px;
+        }
+    }
+    .landPage {
+        margin-top: 8px;
+        background-image: url("https://r-fa.bstatic.com/xdata/images/xphoto/1920x810/55796843.jpg?k=ed50de77fd78c350b76cfa6eee8ab74310e237c0c1161a9522e48e5e4383e63e&o=");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .land-title {
+            h2 {
+                text-align: center;
+                font-size: 55px;
+                color: white;
+                margin-bottom: 24px;
+            }
+            .land-info {
+                background-color: white;
+                display: flex;
+                padding: 10px;
+
+                .check-ini {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                    margin: 0 20px;
+                    .tittle {
+                        font-size: 12px;
+                        margin-bottom: 8px;
+                        text-transform: uppercase;
+                    }
+                    .content {
+                        font-weight: bold;
+                        font-size: 16px;
+                    }
+                }
+                .verificar {
+                    align-self: center;
+                    padding: 10px 30px;
+                    border-radius: 1px;
+                }
+            }
+        }
+    }
+    .nuestros-cuartos {
+        color: $primary-color;
+        font-size: 45px;
+        margin: 40px 0;
+        font-weight: normal;
+        text-align: center;
+    }
+    .rooms-cards {
+        padding: 0 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        .card {
+            box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+            img {
+                width: 100%;
+                height: 30%;
+            }
+            .card-info {
+                display: flex;
+                justify-content: space-between;
+                background: $card-background;
+                padding: 20px;
+
+                .title-price {
+                    h2 {
+                        margin-bottom: 5px;
+                        color: #444444;
+                        font-size: 16px;
+                    }
+                    span {
+                        color: #a8a8a8;
+                        font-size: 14px;
+                    }
+                }
+                .ver-detalles {
+                    color: $primary-color;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .info-services {
+        margin: 30px 0;
+        text-align: center;
+        line-height: 30px;
+    }
+    .servicios {
+        padding: 0 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        img {
+            width: 100%;
+        }
+    }
+    .footer {
+        background: #465a65;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        .enlaces {
+            margin: 0 30px;
+            h3 {
+                color: $primary-color;
+            }
+            ul li {
+                list-style: none;
+                color: white;
+                margin: 15px 0;
+                .fab,
+                .fas {
+                    color: white;
+                    margin: 0 20px;
+                }
+            }
+        }
+    }
+}
+
+// https://www.ahstatic.com/photos/6182_ho_00_p_1024x768.jpg

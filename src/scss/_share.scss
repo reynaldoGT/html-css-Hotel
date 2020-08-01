@@ -1,1 +1,21 @@
 //?Share styled
+
+.button {
+    border: none;
+    border: 1px solid $button-border-color;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: $button-border-color;
+    transition: .3s ease all;
+    &.logup {
+        background: $primary-color;
+        color: white;
+        border: none;
+    }
+    &:hover {
+        cursor: pointer;
+
+        box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+}
